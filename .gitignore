@@ -1,0 +1,88 @@
+# ==============================================================================
+# STATIONOMICS (MAPID WebGIS Competition 2026) - .gitignore
+# ==============================================================================
+
+# --- Large Raw Geospatial Data & Output (Reproducible from Scraping Scripts) ---
+# Raw data directory & generated outputs (GeoJSON, etc.)
+data_raw/
+**/data_raw/
+Scraping/data_raw/
+
+# OpenStreetMap PBF extracts (e.g. java-*.osm.pbf ~900MB)
+*.pbf
+**/*.pbf
+
+# Raster data (WorldPop population & demographic rasters ~160MB+ each)
+*.tif
+*.tiff
+worldpop_age_sex/
+**/worldpop_age_sex/
+Scraping/worldpop_age_sex/
+
+# Compressed download tiles (e.g. Google Open Buildings *.csv.gz, archives)
+*.csv.gz
+*.gz
+*.tar.gz
+
+# Cache, partial downloads, checkpoints & temporary files
+*_partial.json
+**/*_partial.json
+*.tmp
+*.cache
+*.temp
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+gisenv/
+**/gisenv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# --- Environment variables & Secrets ---
+.env
+.env.*
+!.env.example
+*.local
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- IDE & Editor Settings (Optional local overrides) ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
