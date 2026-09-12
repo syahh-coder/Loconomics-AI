@@ -1,0 +1,97 @@
+========================================================================
+STATIONOMICS - Log Training Pipeline (train_model.run_pipeline)
+Tanggal: 2026-09-12
+Mode training: blended (real Menu Go + augmentasi sintetis)
+========================================================================
+
+12:15:27 [INFO] __main__: Mode training: 'blended' (default) - data real Menu Go digabung dengan augmentasi sintetis. Pastikan sudah jalankan process_real_survey.py + merge_training_data.py.
+12:15:27 [INFO] __main__: >>> TAHAP 1: Feature Engineering
+12:15:27 [INFO] train_model.feature_engineering: === Mulai membangun hex_features ===
+12:15:29 [INFO] train_model.data_loader: Grid dasar dimuat: 40288 heksagon
+12:15:32 [INFO] train_model.data_loader: 'pop_100m' ditemukan langsung di h3_grid_with_pop_age.geojson
+12:15:32 [INFO] train_model.data_loader: Populasi dimuat: 40288 baris
+12:15:36 [INFO] train_model.data_loader: Data bangunan dimuat: 40288 baris
+12:15:38 [INFO] train_model.data_loader: Data risiko banjir dimuat: 40288 baris
+[WARNING pyogrio x8: kolom tag OSM (name, amenity, office, building, landuse, railway, public_transport, highway, leisure) tidak diparse sebagai JSON, dibiarkan sebagai string - tidak berpengaruh ke hasil, hanya notifikasi format baca file]
+12:15:39 [INFO] train_model.data_loader: OSM 'simpul_transit' dimuat: 8814 titik
+12:16:06 [INFO] train_model.data_loader: OSM 'kompetitor' dimuat: 27727 titik
+12:16:12 [INFO] train_model.data_loader: OSM 'generator_keramaian' dimuat: 17123 titik
+12:16:13 [INFO] train_model.feature_engineering: hex_features selesai dibangun. Langkah berhasil: ['populasi (D01, D02)', 'bangunan (M01, M02)', 'risiko banjir (proksi L03)', 'jarak ke simpul transit (proksi D03)', 'jumlah kompetitor (dasar C01-C08)', 'jumlah generator keramaian (D09)']
+12:16:13 [INFO] train_model.feature_engineering: Total kolom: ['hex_id', 'centroid_lat', 'centroid_lon', 'resolusi', 'n_titik_misi', 'tingkat_keyakinan', 'data_source', 'geometry', 'pop_usia_produktif', 'pop_100m', 'rasio_tutupan_bangunan', 'luas_bangunan_median', 'jumlah_bangunan', 'risiko_banjir_indeks_mean', 'risiko_banjir_indeks_max', 'jarak_simpul_m', 'n_kompetitor', 'n_generator_keramaian']
+12:16:13 [INFO] train_model.feature_engineering: Total baris: 40288
+12:16:13 [WARNING] train_model.feature_engineering: RDTR (L01/L02) dan taksonomi POI terpadu (C03-C05) BELUM di-join ke hex_features - butuh langkah verifikasi manual tambahan yang belum dikerjakan (lihat DATA_SCHEMA.md). Model saat ini training TANPA kedua fitur ini.
+12:16:18 [INFO] train_model.feature_engineering: hex_features disimpan -> D:\Loconomics\Scraping\data_raw\hex_features.geojson
+
+12:16:18 [INFO] __main__: >>> TAHAP 2: Training Model
+12:16:18 [INFO] train_model.train_model: === Mulai pipeline training ===
+12:16:18 [INFO] train_model.train_model: Langkah 1/4: memuat data label survei...
+12:16:18 [INFO] train_model.data_loader: 'training_data_gabungan.csv' dimuat dari 'survei/': 480 baris, kolom: ['hex_id', 'skor_ramai_terkoreksi', 'harga_median_porsi', 'n_titik_real', 'sumber_data', 'is_dummy', 'kawasan_survei']
+12:16:18 [WARNING] train_model.data_loader: PERINGATAN: kolom 'is_dummy' terdeteksi TRUE di data label ini. Ini DATA SINTETIS dari generate_dummy_survey.py, bukan survei asli. Pastikan ini memang disengaja dan JANGAN sampai file hasil terkirim ke tim WebGIS sebagai data 100% asli tanpa disclosure.
+12:16:18 [INFO] train_model.train_model: Langkah 2/4: validasi kecukupan data...
+12:16:18 [INFO] train_model.train_model: Validasi kecukupan data LOLOS: 480 titik, 12 kawasan unik
+12:16:18 [INFO] train_model.train_model: Langkah 3/4: membangun hex_features... (rebuild kedua, sama seperti Tahap 1)
+12:16:59 [INFO] train_model.feature_engineering: hex_features selesai dibangun ulang (hasil identik Tahap 1)
+
+12:17:00 [INFO] train_model.train_model: Langkah 4/4: training kedua model...
+12:17:00 [INFO] train_model.train_model: Fitur yang dipakai training (14 kolom): ['centroid_lat', 'centroid_lon', 'resolusi', 'n_titik_misi', 'pop_usia_produktif', 'pop_100m', 'rasio_tutupan_bangunan', 'luas_bangunan_median', 'jumlah_bangunan', 'risiko_banjir_indeks_mean', 'risiko_banjir_indeks_max', 'jarak_simpul_m', 'n_kompetitor', 'n_generator_keramaian']
+
+--- Model: skor_ramai_terkoreksi (D10) ---
+12:17:00 [INFO] Fold 0 (test kawasan=['kawasan_04','kawasan_11','kawasan_01','kawasan_00']): R2=0.554, MAE=0.260
+12:17:00 [INFO] Fold 1 (test kawasan=['kawasan_02','kawasan_09','kawasan_06','kawasan_03']): R2=0.557, MAE=0.209
+12:17:01 [INFO] Fold 2 (test kawasan=['kawasan_05','kawasan_07','kawasan_08','kawasan_10']): R2=0.752, MAE=0.177
+12:17:01 [INFO] Rata-rata cross-validation: R2=0.621, MAE=0.215
+12:17:01 [INFO] Model disimpan -> D:\Loconomics\train_model\output\model_skor_ramai.joblib (14 fitur)
+
+--- Model: harga_median_porsi (B07) ---
+12:17:01 [INFO] Fold 0 (test kawasan=['kawasan_04','kawasan_11','kawasan_01','kawasan_00']): R2=0.418, MAE=3044.582
+12:17:01 [INFO] Fold 1 (test kawasan=['kawasan_02','kawasan_09','kawasan_06','kawasan_03']): R2=0.643, MAE=2808.593
+12:17:02 [INFO] Fold 2 (test kawasan=['kawasan_05','kawasan_07','kawasan_08','kawasan_10']): R2=0.663, MAE=2739.905
+12:17:02 [INFO] Rata-rata cross-validation: R2=0.574, MAE=2864.360
+12:17:02 [INFO] Model disimpan -> D:\Loconomics\train_model\output\model_harga.joblib (14 fitur)
+
+12:17:02 [INFO] train_model.train_model: Hasil validasi disimpan -> D:\Loconomics\train_model\output\hasil_validasi.json
+12:17:02 [INFO] train_model.train_model: === Training selesai ===
+
+12:17:02 [INFO] __main__: >>> TAHAP 3: Prediksi ke Seluruh Heksagon
+12:17:02 [INFO] train_model.predict: === Mulai prediksi ke seluruh heksagon ===
+12:17:36 [INFO] train_model.feature_engineering: hex_features selesai dibangun ulang (hasil identik Tahap 1)
+12:17:36 [INFO] train_model.data_loader: 'training_data_gabungan.csv' dimuat: 480 baris
+12:17:37 [INFO] train_model.predict: 'skor_ramai_terkoreksi': 480 heksagon pakai nilai observasi asli, 39808 heksagon pakai hasil prediksi model
+12:17:37 [INFO] train_model.predict: 'harga_median_porsi': 480 heksagon pakai nilai observasi asli, 39808 heksagon pakai hasil prediksi model
+12:17:41 [INFO] train_model.predict: === Selesai. File final -> D:\Loconomics\Scraping\data_raw\hex_features_final.geojson ===
+12:17:41 [INFO] __main__: >>> PIPELINE SELESAI
+
+========================================================================
+RINGKASAN HASIL
+========================================================================
+Total waktu proses: ~12:15:27 - 12:17:41 (~2 menit 14 detik)
+
+Data training: 480 titik total
+  - 15 titik ASLI (Menu Go, dalam bbox studi) -> diagregasi jadi heksagon unik
+  - ~465 titik SINTETIS (augmentasi, formula: populasi + jarak simpul + noise)
+  - 12 kawasan unik (spatial k-fold, GroupKFold n_splits=3)
+
+Model skor_ramai_terkoreksi (D10):  R2 rata-rata = 0.621, MAE rata-rata = 0.215
+Model harga_median_porsi (B07):     R2 rata-rata = 0.574, MAE rata-rata = 2864.36
+
+Fitur yang dipakai (14): centroid_lat, centroid_lon, resolusi, n_titik_misi,
+pop_usia_produktif, pop_100m, rasio_tutupan_bangunan, luas_bangunan_median,
+jumlah_bangunan, risiko_banjir_indeks_mean, risiko_banjir_indeks_max,
+jarak_simpul_m, n_kompetitor, n_generator_keramaian
+
+Fitur yang BELUM masuk model (perlu kerjaan tambahan sebelum masuk):
+  - RDTR / zonasi (L01, L02) - field kode zona belum diverifikasi manual
+  - Taksonomi 8 kelas POI (C03-C05) - keragaman usaha, pangsa waralaba
+
+Output akhir: D:\Loconomics\Scraping\data_raw\hex_features_final.geojson
+  480 heksagon pakai nilai observasi/agregasi asli+sintetis campuran (lihat kolom sumber_data di training_data_gabungan.csv untuk breakdown)
+  39808 heksagon pakai hasil prediksi murni dari model
+
+CATATAN PENTING UNTUK SERAH TERIMA:
+  R2 di atas 0.5 untuk kedua model, dengan data yang 96.9% sintetis - ini
+  ekspektasinya WAJAR karena formula sintetis memang dibuat berkorelasi
+  dengan fitur (populasi, jarak simpul) yang juga dipakai model - BUKAN
+  bukti model sudah akurat untuk dunia nyata. Nilai R2/MAE ini akan
+  berubah signifikan begitu proporsi data asli bertambah dari hasil
+  survei lapangan 12 kawasan.
+========================================================================

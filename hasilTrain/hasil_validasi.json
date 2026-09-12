@@ -1,0 +1,86 @@
+{
+  "skor_ramai": {
+    "per_fold": [
+      {
+        "fold": 0,
+        "kawasan_test": [
+          "kawasan_04",
+          "kawasan_11",
+          "kawasan_01",
+          "kawasan_00"
+        ],
+        "r2": 0.5539083974036318,
+        "mae": 0.25984596861063414,
+        "n_test": 158
+      },
+      {
+        "fold": 1,
+        "kawasan_test": [
+          "kawasan_02",
+          "kawasan_09",
+          "kawasan_06",
+          "kawasan_03"
+        ],
+        "r2": 0.5573855151555205,
+        "mae": 0.2087492716528752,
+        "n_test": 162
+      },
+      {
+        "fold": 2,
+        "kawasan_test": [
+          "kawasan_05",
+          "kawasan_07",
+          "kawasan_08",
+          "kawasan_10"
+        ],
+        "r2": 0.7518916995267632,
+        "mae": 0.17674334648993567,
+        "n_test": 160
+      }
+    ],
+    "r2_rata": 0.6210618706953052,
+    "mae_rata": 0.21511286225114834
+  },
+  "harga": {
+    "per_fold": [
+      {
+        "fold": 0,
+        "kawasan_test": [
+          "kawasan_04",
+          "kawasan_11",
+          "kawasan_01",
+          "kawasan_00"
+        ],
+        "r2": 0.41805192530960744,
+        "mae": 3044.5824133747205,
+        "n_test": 158
+      },
+      {
+        "fold": 1,
+        "kawasan_test": [
+          "kawasan_02",
+          "kawasan_09",
+          "kawasan_06",
+          "kawasan_03"
+        ],
+        "r2": 0.6425161843443012,
+        "mae": 2808.592647087531,
+        "n_test": 162
+      },
+      {
+        "fold": 2,
+        "kawasan_test": [
+          "kawasan_05",
+          "kawasan_07",
+          "kawasan_08",
+          "kawasan_10"
+        ],
+        "r2": 0.6628143673688969,
+        "mae": 2739.904686802992,
+        "n_test": 160
+      }
+    ],
+    "r2_rata": 0.5744608256742685,
+    "mae_rata": 2864.3599157550816
+  }
+}

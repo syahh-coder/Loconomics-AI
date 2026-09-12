@@ -1,0 +1,11 @@
+geopandas>=0.14.0
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+shapely>=2.0.0
+
+# Catatan: geopandas dan shapely kemungkinan sudah ter-install dari
+# environment 'stationomics' yang dipakai skrip akuisisi data (Scraping/).
+# Jalankan pipeline ini di environment yang sama, jangan bikin environment
+# baru terpisah - biar konsisten versi geopandas/shapely-nya.

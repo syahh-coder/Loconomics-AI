@@ -1,0 +1,118 @@
+{
+  "komponen": {
+    "IPT": {
+      "variabel": [
+        {
+          "variabel": "ridership_simpul",
+          "bobot_dalam_komponen": 0.5833,
+          "arah": "naik",
+          "terisi": 85
+        },
+        {
+          "variabel": "menit_jalan",
+          "bobot_dalam_komponen": 0.4167,
+          "arah": "turun",
+          "terisi": 85
+        }
+      ],
+      "status": "terpakai"
+    },
+    "IAE": {
+      "variabel": [],
+      "status": "kosong"
+    },
+    "Kompetisi": {
+      "variabel": [],
+      "status": "kosong"
+    },
+    "Biaya_Risiko": {
+      "variabel": [],
+      "status": "kosong"
+    }
+  },
+  "dibuang": [
+    {
+      "komponen": "IPT",
+      "variabel": "n_simpul_transit",
+      "alasan": "nilainya konstan (0) di seluruh heksagon — tidak ada daya beda"
+    },
+    {
+      "komponen": "IPT",
+      "variabel": "n_generator_keramaian",
+      "alasan": "nilainya konstan (0) di seluruh heksagon — tidak ada daya beda"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "n_poi_terpadu",
+      "alasan": "nilainya konstan (0) di seluruh heksagon — tidak ada daya beda"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "skor_ramai_rata",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "pop_usia_produktif",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "harga_median",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "rasio_tutupan_bangunan",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "IAE",
+      "variabel": "belanja_median",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "Kompetisi",
+      "variabel": "n_kompetitor",
+      "alasan": "nilainya konstan (0) di seluruh heksagon — tidak ada daya beda"
+    },
+    {
+      "komponen": "Biaya_Risiko",
+      "variabel": "znt_rp_per_m2",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "Biaya_Risiko",
+      "variabel": "risiko_banjir_indeks_mean",
+      "alasan": "seluruh nilainya kosong"
+    },
+    {
+      "komponen": "Biaya_Risiko",
+      "variabel": "indeks_churn",
+      "alasan": "seluruh nilainya kosong"
+    }
+  ],
+  "bobot_terpakai": {
+    "IPT": 1.0
+  },
+  "regresi_biaya": null,
+  "ambang_keyakinan": {
+    "TINGGI": 12,
+    "SEDANG": 5
+  },
+  "versi_model": "loco-file-v1.0",
+  "n_heksagon_diskor": 85,
+  "resolusi_data": 9,
+  "resolusi_skor": 8,
+  "atribusi": {
+    "basemap": "MAPID MAPS",
+    "jaringan_jalan_dan_poi": "(c) OpenStreetMap contributors, ODbL 1.0",
+    "poi_tambahan": "Overture Maps, CDLA Permissive 2.0",
+    "populasi": "WorldPop, CC BY 4.0",
+    "bangunan": "Google Open Buildings, CC BY 4.0",
+    "zonasi": "RDTR Jakarta Satu, data publik Pemprov DKI",
+    "risiko_banjir": "InaRISK BNPB, data publik",
+    "survei": "Survei lapangan Tim Loconomics via MAPID Apps",
+    "catatan": "Yang dipublikasikan hanya agregat per heksagon dan indeks turunan. Data mentah MAPID tidak diredistribusi."
+  }
+}

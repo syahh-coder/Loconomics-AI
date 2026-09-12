@@ -1,0 +1,82 @@
+==========================================================================
+ LOCONOMICS — Paket data untuk WebGIS
+ Disiapkan 11 September 2026 oleh tahap pengolahan data
+==========================================================================
+
+Paket ini sengaja dipisah dua. Yang di folder utama sudah boleh
+langsung dipasang di peta. Yang di folder bertanda tahan, jangan
+ditayangkan dulu ke publik. Alasannya ada di bawah.
+
+--------------------------------------------------------------------------
+SIAP DIPASANG
+--------------------------------------------------------------------------
+kerangka_peta.geojson  — 253 heksagon H3, 156.5 KB
+   Geometri heksagon beserta kolom yang benar-benar terukur.
+   Kolom yang kosong atau bernilai seragam SUDAH DIBUANG dari
+   berkas ini, supaya tidak ada angka yang terlihat seperti
+   hasil pengukuran padahal bukan.
+
+   Kolom yang ada di dalamnya:
+     - hex_id
+     - kawasan
+     - kode_kawasan
+     - diskor
+     - jarak_simpul_m
+     - menit_jalan
+     - lat
+     - lon
+     - hex_induk
+     - ridership_simpul
+
+   Kolom berikut dibuang karena nilainya sama di semua
+   heksagon, biasanya nol karena layer sumbernya belum ada:
+     n_kompetitor, n_simpul_transit, n_generator_keramaian, n_poi_terpadu, izin_perdagangan, zonasi_diketahui, n_menu_go, n_struk_go, n_properti_go, n_activity, n_titik_survei, n_titik_kring
+
+laporan_cakupan.csv    — variabel mana terisi berapa persen,
+   plus kolom ragam: banyaknya nilai berbeda. Variabel dengan
+   ragam 1 terisi penuh tetapi tidak membedakan apa pun.
+
+metodologi.json        — bobot yang benar-benar dipakai,
+   variabel yang dibuang beserta alasannya, ambang keyakinan,
+   dan atribusi sumber. Isinya WAJIB disalin ke halaman
+   Metodologi di WebGIS. Juri akan menanyakannya.
+
+--------------------------------------------------------------------------
+LAYER SKOR — DITAHAN, JANGAN TAYANG PUBLIK DULU
+--------------------------------------------------------------------------
+Berkasnya tetap disertakan di folder
+'pratinjau_jangan_tayang' supaya bisa dipakai menguji
+pemasangan layer, pewarnaan, dan popup. Tetapi jangan sampai
+terlihat penilai atau pengunjung sebagai temuan, karena:
+
+   - hanya 1 dari 4 komponen punya variasi nyata (minimum 3); yang mati: IAE, Kompetisi, Biaya_Risiko
+   - Skor Peluang hanya punya 6 nilai berbeda (minimum 10) — peta akan tampak seragam
+   - skor disusun dari 2 variabel saja (minimum 4)
+   - regresi biaya~potensi belum jalan, jadi Hidden Gem dan empat kuadran belum punya dasar biaya
+
+Yang membuka kuncinya, berurutan dari paling besar dampaknya:
+   1. Data akuisisi dari AI Engineer (populasi, usia produktif,
+      bangunan, risiko banjir, dan empat layer titik OSM).
+      Satu pesan, tujuh variabel terbuka sekaligus.
+   2. Unduhan hasil survei MAPID Apps ke data_raw/survei/
+      (menu_go, struk_go, properti_go, activity). Ini yang
+      menghidupkan harga, belanja, Indeks Churn, dan membuat
+      tingkat keyakinan berhenti RENDAH semua.
+   3. Pengisian 39 titik ZNT. Ini satu-satunya sumber sisi
+      biaya, dan tanpa sisi biaya tidak ada Hidden Gem.
+
+Begitu salah satunya masuk, jalankan ulang JALANKAN.bat.
+Pemeriksaan ini otomatis berjalan lagi dan, bila sudah lolos,
+berkasnya berpindah sendiri ke folder layer_skor.
+
+--------------------------------------------------------------------------
+SATU HAL YANG HARUS DISEBUT DI HALAMAN METODOLOGI
+--------------------------------------------------------------------------
+Angka ridership Manggarai, menurut catatan sumbernya sendiri,
+kemungkinan besar mencakup penumpang transit antar-lintas yang
+tidak keluar stasiun. Selama ridership jadi variabel terberat,
+keterbatasan itu sebaiknya kita sebut sendiri lebih dulu.
+
+Basemap wajib MAPID MAPS. Data jalan dan POI dari OpenStreetMap,
+© OpenStreetMap contributors, lisensi ODbL — yang ditampilkan
+hanya hasil agregasi, bukan data mentahnya.

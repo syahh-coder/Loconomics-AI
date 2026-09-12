@@ -1,0 +1,171 @@
+hex_id,kawasan,komponen,variabel,nilai_mentah,nilai_normal,bobot_efektif,kontribusi,arah
+898c1070097ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107837bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1078363ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070087ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107836bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107054bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078373ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070083ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107055bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079cb7ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107836fffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070093ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107042fffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078347ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700b3ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107008fffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078377ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107834fffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1078367ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700bbffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079dd3ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079ca7ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070543ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107054fffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107830bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107009bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107830fffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070427ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107008bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107042bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070553ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079cb3ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1078343ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079ca3ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079dd7ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079d9bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700a3ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070423ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070017ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078357ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070467ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107832bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700b7ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079ddbffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070013ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107833bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107834bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700abffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070547ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079dc3ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079d93ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079cafffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1078303ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070557ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c10700d7ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107831bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10705cbffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107057bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070437ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107046fffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078307ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700c7ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c107043bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070477ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079cbbffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079d8bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1078353ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10705cfffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c10700a7ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079c87ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107835bffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070003ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079dc7ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079d83ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079cabffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c10700afffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070007ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1078323ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070433ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c10783cfffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1079dcbffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107832fffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c1070463ffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1079c37ffff,Manggarai,IPT,ridership_simpul,57517269.0,100.0,0.5833,58.33,mendukung
+898c107056bffff,Depok Baru,IPT,ridership_simpul,22931228.0,0.0,0.5833,0.0,mendukung
+898c1070097ffff,Depok Baru,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c107837bffff,Manggarai,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c1078363ffff,Manggarai,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c1070087ffff,Depok Baru,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c107836bffff,Manggarai,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c107054bffff,Depok Baru,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c1078373ffff,Manggarai,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c1070083ffff,Depok Baru,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c107055bffff,Depok Baru,IPT,menit_jalan,5.0,100.0,0.4167,41.67,mendukung
+898c1079cb7ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107836fffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1070093ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107042fffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1078347ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c10700b3ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107008fffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1078377ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107834fffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1078367ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c10700bbffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079dd3ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079ca7ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1070543ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107054fffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107830bffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107009bffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107830fffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1070427ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107008bffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c107042bffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1070553ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079cb3ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1078343ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079ca3ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079dd7ffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1079d9bffff,Manggarai,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c10700a3ffff,Depok Baru,IPT,menit_jalan,10.0,50.0,0.4167,20.835,mendukung
+898c1070423ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070017ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1078357ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070467ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107832bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700b7ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079ddbffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070013ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107833bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107834bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700abffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070547ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079dc3ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079d93ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079cafffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1078303ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070557ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700d7ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107831bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10705cbffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107057bffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070437ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107046fffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1078307ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700c7ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107043bffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070477ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079cbbffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079d8bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1078353ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10705cfffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700a7ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079c87ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107835bffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070003ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079dc7ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079d83ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079cabffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10700afffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070007ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1078323ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070433ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c10783cfffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079dcbffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107832fffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1070463ffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c1079c37ffff,Manggarai,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung
+898c107056bffff,Depok Baru,IPT,menit_jalan,15.0,0.0,0.4167,0.0,mendukung

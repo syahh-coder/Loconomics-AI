@@ -8,6 +8,10 @@ data_raw/
 **/data_raw/
 Scraping/data_raw/
 
+# Jangan exclude folder hasil training model
+!/hasiltrain/
+!/hasiltrain/**
+
 # OpenStreetMap PBF extracts (e.g. java-*.osm.pbf ~900MB)
 *.pbf
 **/*.pbf

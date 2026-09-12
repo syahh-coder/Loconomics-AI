@@ -1,0 +1,10 @@
+Folder data_raw_seed/ isinya cuma referensi - copy manual isinya ke lokasi
+asli sesuai config.py:
+
+  data_raw_seed/survei_asli_sample/menu_go_sample.csv
+    -> copy ke: Scraping/data_raw/survei_asli_sample/menu_go_sample.csv
+
+Setelah itu jalankan (dari root Loconomics/):
+  python -m train_model.process_real_survey
+  python -m train_model.merge_training_data
+  python -m train_model.run_pipeline
